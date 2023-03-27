@@ -23,12 +23,14 @@ int main(int argc, char** argv)
 		ctx.AddGlobalVariable("num", num);
 			
 		// Print out the value of 'num' in Lua and Change value of an 'num' variable in Lua
-		ctx.CompileString("task3", "print(num)\nnum = 2023");
+		ctx.CompileString("task3", "print(\"Printing from Lua\")\n"
+						"print( \"Initial value of variable = \", num)\n"
+						"num = 2023");
 
 		ctx.Run("task3");
 
 		//  Print out value of 'num'
-		cout << num->getValue() << "\n";
+		cout << "Printing from C++\n" << "Value of variable after change in Lua = " <<num->getValue() << "\n";
 	 
 	}
 	catch (runtime_error& e) {

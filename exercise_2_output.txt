@@ -1,4 +1,6 @@
 lord-bryan@toxic-mould:~/projects/rlos/exercise_2$ ./screening_exercise_2 
 Bryan Elee says hello
-25.0
-2023
+Printing from Lua
+Initial value of variable =   25.0
+Printing from C++
+Value of variable after change in Lua = 2023
